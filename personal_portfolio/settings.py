@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['.gopnikmaksim.com']
 # Application definition
 
 INSTALLED_APPS = [
-    "djangosecure",
+    #"djangosecure",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "djangosecure.middleware.SecurityMiddleware",
+    #"djangosecure.middleware.SecurityMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
