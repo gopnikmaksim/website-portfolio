@@ -127,5 +127,4 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 # Enable HTTPS
-
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
