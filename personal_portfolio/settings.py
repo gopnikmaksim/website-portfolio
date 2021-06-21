@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['.gopnikmaksim.com']
 # Application definition
 
 INSTALLED_APPS = [
+    "djangosecure",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -38,10 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "projects",
-    "djangosecure",
 ]
 
 MIDDLEWARE = [
+    "djangosecure.middleware.SecurityMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -49,7 +50,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "djangosecure.middleware.SecurityMiddleware",
 ]
 
 ROOT_URLCONF = "personal_portfolio.urls"
